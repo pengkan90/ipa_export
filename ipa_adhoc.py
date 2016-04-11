@@ -8,10 +8,6 @@ import getpass
 import sys
 import ipa_export
 
-#xcodebuild clean
-#xcodebuild archive -project $PWD/*.xcodeproj -scheme Parking_Where -archivePath /Users/apple/Desktop/Release/Ad_hoc/Parking_Where/Parking_Where.xcarchive
-#xcodebuild -exportArchive -archivePath /Users/apple/Desktop/Release/Ad_hoc/Parking_Where/Parking_Where.xcarchive -exportPath /Users/apple/Desktop/Release/Ad_hoc/Parking_Where -exportFormat ipa -exportProvisioningProfile xinFlyWhere
-
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -19,14 +15,12 @@ sys.setdefaultencoding('utf-8')
 PROJECT_C_NAME = "代泊司机端"
 
 #请修改为需要使用的证书全称
-CODE_SIGN = "iPhone Distribution: Wuhan Mobilefly Technology Co. Ltd. (HTPX8WMR4A)"
+CODE_SIGN = "iPhone Distribution: xxxxxx Technology Co. Ltd. (xxxxx)"
 
 #PROFILE文件的值， 点击左上角“Xcode” -> "Preferences" -> "Accounts" -> "要使用的appleID" -> "View Details" -> 
 # "右键点击需要使用的PROFILE" -> "show in Finder" -> 文件名就是这个值
-PROFILE = "9382aa73-a9db-4996-a1d5-a066266526b7"   #ad_hoc
-PROFILE_NAME = "ParkerDriver_adHoc"
-#PROFILE = "10c10fab-6893-45c8-9aec-9d9a5dcaee11"    #appStore
-#PROFILE_NAME = "ParkerDriver_appStore"
+PROFILE = "xxxxxxx"   #ad_hoc
+PROFILE_NAME = "xxxxxx"
 
 PROJECT_NAME = "parker"
 SCHEME_NAME = "parker"
@@ -36,14 +30,14 @@ EXPORT_PATH_PREFIX = "/Users/%s/Desktop/Release/Ad_hoc/%s"%(getpass.getuser(),PR
 QRCODE_NAME = "/Users/%s/Desktop/Release/Ad_hoc/%s/download_url.png"%(getpass.getuser(),PROJECT_NAME)
 
 #蒲公英上传时需要的参数配置
-PGYER_UKEY = "04fa2184bed5c4a0e1fea6e205e20aab"
-PGYER_API_KEY = "815ab126c9e527e7fb56b061c50394e7"
+PGYER_UKEY = "xxxxxx"
+PGYER_API_KEY = "xxxxxx"
 
 #发送邮件相关配置
-TO_LIST = ["fsxin@tnar.cn"]
-FROM_MAIL = "kpeng@tnar.cn" #你的邮箱
+TO_LIST = ["xxxxx"]
+FROM_MAIL = "xxxxx" #你的邮箱
 FROM_PASS = "pwd"   #你的密码
-MAIL_HOST = "smtp.tnar.cn"
+MAIL_HOST = "xxxxx"
 
 def export(buildcmd, ipaName) :
 	ipa_export.export_adhoc(PROJECT_NAME, PROJECT_C_NAME, CODE_SIGN, PROFILE, buildcmd, EXPORT_PATH_PREFIX, ipaName, QRCODE_NAME, PGYER_UKEY, PGYER_API_KEY, FROM_MAIL, FROM_PASS, TO_LIST, MAIL_HOST)
