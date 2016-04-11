@@ -12,3 +12,6 @@ ipa_appstore.py 依赖 ipa_export.py
 
 运行示例：
   ./ipa_adhoc.py w
+  
+  
+<h1>功能简述</h1>
