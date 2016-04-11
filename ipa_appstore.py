@@ -10,12 +10,12 @@ import sys
 import ipa_export
 
 #请修改为需要使用的证书全称
-CODE_SIGN = "iPhone Distribution: Wuhan Mobilefly Technology Co. Ltd. (HTPX8WMR4A)"
+CODE_SIGN = "iPhone Distribution: xxxxx Technology Co. Ltd. (xxxx)"
 
 #PROFILE文件的值， 点击左上角“Xcode” -> "Preferences" -> "Accounts" -> "要使用的appleID" -> "View Details" -> 
 # "右键点击需要使用的PROFILE" -> "show in Finder" -> 文件名就是这个值
-PROFILE = "10c10fab-6893-45c8-9aec-9d9a5dcaee11"    #appStore
-PROFILE_NAME = "ParkerDriver_appStore"
+PROFILE = "xxxxx"    #appStore
+PROFILE_NAME = "xxxxxxx"
 
 PROJECT_NAME = "parker"
 SCHEME_NAME = "parker"
