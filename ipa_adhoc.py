@@ -20,7 +20,7 @@ CODE_SIGN = "iPhone Distribution: xxxxxx Technology Co. Ltd. (xxxxx)"
 #PROFILE文件的值， 点击左上角“Xcode” -> "Preferences" -> "Accounts" -> "要使用的appleID" -> "View Details" -> 
 # "右键点击需要使用的PROFILE" -> "show in Finder" -> 文件名就是这个值
 PROFILE = "xxxxxxx"   #ad_hoc
-PROFILE_NAME = "xxxxxx"
+PROFILE_NAME = "xxxxxx" #profile 文件名称
 
 PROJECT_NAME = "parker"
 SCHEME_NAME = "parker"
@@ -37,7 +37,7 @@ PGYER_API_KEY = "xxxxxx"
 TO_LIST = ["xxxxx"]
 FROM_MAIL = "xxxxx" #你的邮箱
 FROM_PASS = "pwd"   #你的密码
-MAIL_HOST = "xxxxx"
+MAIL_HOST = "smtp.xxx.xx"
 
 def export(buildcmd, ipaName) :
 	ipa_export.export_adhoc(PROJECT_NAME, PROJECT_C_NAME, CODE_SIGN, PROFILE, buildcmd, EXPORT_PATH_PREFIX, ipaName, QRCODE_NAME, PGYER_UKEY, PGYER_API_KEY, FROM_MAIL, FROM_PASS, TO_LIST, MAIL_HOST)
