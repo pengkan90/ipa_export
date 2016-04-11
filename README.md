@@ -13,5 +13,5 @@ ipa_appstore.py 依赖 ipa_export.py
 运行示例：
   ./ipa_adhoc.py w
   
-  
-<h1>功能简述</h1>
+
+ipa_adhoc.py   运行之后，会把生成的ipa包上传到蒲公英， 并发送邮件。  蒲公英及邮件功能需要配置相应的参数
